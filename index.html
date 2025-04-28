@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSmartWaterBottle</title>
+    <!-- Gives me access to the fontawesome library to display icons on my webpage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="author" content="Gradi Puata">
+    <meta name="description" content="EcoSmartWaterBottle">
+    <!-- links css file to html -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- links js file to html -->
+    <script src="script.js" defer></script>
+
+  
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="nav">
+           <div class="nav-store">
+                <p id="logo">ECO511</p>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars" id="menu-click"></i>
+                </div> 
+           </div>
+           <!-- Navigation elements -->
+            <ul class="nav-ul"  id="nav-id">
+                <li class="nav-ul-li"><a href="#" id="li-link">Home</a></li>
+                <li class="nav-ul-li"><a href="#features" id="li-link">Features</a></li>
+                <li class="nav-ul-li"><a href="#pricing" id="li-link">Pricing</a></li>
+                <li class="nav-ul-li"><a href="#contact-us" id="li-link">Contact Us</a></li>       
+            </ul>
+            
+        </nav>
+    </header>
+    <!-- main content -->
+    <main class="main">
+        <section id="home">
+            <article class="content-main">
+                <div class="container-texts">
+                    <h1 class="main-h1">EcoSmart  Bottle</h1>
+                    <p class="phrase">
+                        Stay hydrated the smart way with the EcoSmart Water
+                         Bottle—where innovation meets sustainability! 
+                         Crafted from eco-friendly materials, this sleek, 
+                         BPA-free bottle keeps your drinks at the 
+                         perfect temperature for hours. 
+                         With a stylish design and a built-in 
+                         smart tracker to monitor your water 
+                         intake, staying refreshed has never 
+                         been easier. Ditch single-use 
+                         plastics and sip smarter with 
+                         EcoSmart—hydration that’s good for you 
+                         and the planet! 
+                    </p>
+                </div>
+            </article>
+            <!-- social media icons -->
+            <aside class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </aside>
+        </section>
+        <!-- features code -->
+        <section id="features">
+            <h1>Features</h1>
+            <div class="stored">
+                <div>
+                    <span class="feauture">✅ Eco-Friendly Materials</span>
+                    <span class="feauture">✅ Smart Hydration Tracker</span>
+                    <span class="feauture">✅ Temperature Control</span>
+                    <span class="feauture">✅ LED Display</span>
+                 </div>
+                 <div>
+                    <span class="feauture">✅ USB Rechargeable</span>
+                    <span class="feauture">✅ Ergonomic & Stylish</span>
+                    <span class="feauture">✅ Wireless Connectivity</span>
+                    <span class="feauture">✅ Leak-Proof & Durable</span>
+                 </div>
+            </div>
+                 
+        </section>
+        <!-- Pricing section -->
+        <section id="pricing">
+            <div id="checkout">
+                <figure class="first-show">
+                    <h3>More than just a bottle!</h3>
+                    <img src="images/photorealistic-water-bottle.jpg" alt="bottle picture">
+                    <figcaption class="submit" id="modal-show" style="margin:1rem auto">Buy Now</figcaption>
+                    <div class="details-d details-p">
+                        <p class="p-d">Total Price: R</p>
+                        <p class="p-d" id="total-price-value">0.00</p>
+                    </div>
+                </figure>
+                <!-- Modal pop up -->
+                <div class="details" id="modal">
+                    <h1>Check out here</h1>
+                    <span id="close">&times;</span>
+                    <select name="color"  id="color">
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+                        <option value="purple">purple</option>
+                    </select>
+                    <div class="details-d">
+                        <p class="title">VOLUME</p>
+                        <div class="sizes-store">
+                            <input type="radio"  name="size" id="size1"   value="250"><span>250ML</span>
+                        </div>
+                        <div class="sizes-store">
+                            <input type="radio" name="size" id="size2" value="500"><span>500ML</span>
+                        </div>
+                        <div class="sizes-store">
+                            <input type="radio" name="size" id="size3" value="750"><span>750ML</span>
+                        </div>
+                        <div class="sizes-store">
+                            <input type="radio" name="size" id="size4"  value="1000"><span>1000ML</span>
+                        </div>
+                    </div>
+                    <div class="details-d">
+                        <p class="title">Quantity</p>
+                        <div class="sizes-store">
+                            <span id="howmany">How many bottles would you like to order?</span>
+                            <input type="number" id="quantity" max="5" min="1">
+                        </div>
+                    </div>
+                <button id="calculate" class="btn-buy submit" type="submit">Buy Now</button>
+                </div>
+                
+            </div>
+            <!-- Price menu -->
+            <aside class="menu">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>VOLUME( ml )</th>
+                            <th>COMES WITH CHARGER</th>
+                            <th>PRICE ( R )</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>250</td>
+                            <td>❌</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>500</td>
+                            <td>❌</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>750</td>
+                            <td>✔</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>1000</td>
+                            <td>✔</td>
+                            <td>2500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </section>
+    </main>
+    <!-- footers -->
+    <footer id="contact-us">
+        <form action="" method="" id="form">
+            <fieldset id="fs-contact">Contact Us</fieldset>
+            <input type="text" placeholder="Your Name" name="" id="client-name">
+            <input type="email" placeholder="Your Email" name="" id="client-email">
+            <textarea name="" placeholder="Your message" col="80" rows="7" id="client-message"></textarea>
+            <label for="terms-and-condition">
+                <input type="checkbox" name="" id="terms-and-conditions"><span class="agreement">I agree to the <span id="tnc">terms-and-condition</span></span>
+            </label>    
+            <input type="submit" id="submit" class="submit">        
+        </form>
+        <p class="closing">This webpage was developed by Gradi Puata &copy Copyrights Reserved.</p>
+    </footer>
+
+</body>
+</html>
